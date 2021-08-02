@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center" style="background-color: gold">
+    <h1 class="display-4" style="color: blue">Next Bussiness Innovation</h1>
+    <h3 style="color: blue">ข้อมูลพนักงาน</h3>
+    <div class="py-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="user" style="color: blue">พนักงาน</label>
+                    <input type="text" name="user" class="form-control" id="user" placeholder="ชื่อ-นาสกุล" required autocomplete="off">
+                </div>
+                <div class="col-md-4">
+                    <label for="position" style="color: blue">ตำแหน่ง</label>
+                    <select name="type" id="type" class="form-control" required>
+                        <option></option>
+                        <option> Programmer </option>
+                        <option> Bussiness Analiys </option>
+                        <option> Admin</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="salery" style="color: blue">เงินเดือน</label>
+                    <input type="number" name="salery" class="form-control" id="salery" min="0" placeholder="เงินเดือน" required autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="work" style="color: blue">รายละเอียดงาน</label>
+                    <input type="text" name="work" class="form-control" id="work" placeholder="รายละเอียดงาน" required autocomplete="off">
+                </div>
+                <div class="col-md-4">
+                    <label for="talent" style="color: blue">ความสามารถพิเศษ</label>
+                    <input type="text" name="talent" class="form-control" id="talent" placeholder="ความสามารถพิเศษ" required autocomplete="off">
+                </div>
+                <div class="col-md-4">
+                    <label for="idcard" style="color: blue">รหัสพนักงาน</label>
+                    <input type="number" name="idcard" class="form-control" id="idcard" min="0" placeholder="รหัสพนักงาน" required autocomplete="off">
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-grid gap-2" style="padding-top: 20% ">
+                            <button type="submit" class="btn btn-success">บันทึก</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
